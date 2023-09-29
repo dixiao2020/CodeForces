@@ -1,0 +1,5 @@
+This is a problem involving the DSU data structure and two-pointer technique.
+If we set the start node to be "a" and the end node to be "b", we need to ensure any node in between (a and b are inclusive) is with a height not larger than height(a)+energy;
+We need to sort queries by height(a)+energy, record the indicies of queries, and sort edges by max(height[src], height[dst]) if src and dst are the points of an edges.
+The two-pointer technique will help answer each query after updates and we simply check if two nodes have same ancester (check if two points are connected).
+Rating for this problem: 2000. My leetcode problems using the same trick that one needs to sort and record indices of queries.
